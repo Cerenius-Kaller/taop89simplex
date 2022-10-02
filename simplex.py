@@ -73,6 +73,7 @@ while iter >= 0:
         diffz = z-zcheat
         print ('xdiff: '+repr(diffx))
         print ('zdiff: '+repr(diffz))
+        # print('z: ',z)
     else:
         # calc entering column, a
         #Step 9
@@ -90,8 +91,7 @@ while iter >= 0:
             utix = np.where(kvot > 0, kvot, np.inf).argmin() #Ersätt alla tal =<0 med +inf och hitta lägsta index
             utgvar = bix[utix]
             
-            print(' Iter: '+repr(iter)+' z: '+repr(z)+' rc: ' +
-                  repr(rc_min)+' ink: '+repr(inkvar+1)+' utg: '+repr(utgvar+1))
+            print(' Iter: '+repr(iter)+' z: '+repr(z)+' rc: ' + repr(rc_min)+' ink: '+repr(inkvar+1)+' utg: '+repr(utgvar+1))
          
             # make new partition
             # --------
